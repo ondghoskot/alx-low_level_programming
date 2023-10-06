@@ -7,10 +7,10 @@
  */
 int main(void)
 {
-	int x = 0;
+	int x = 48;
 	char hx = 'a';
 
-	while (x < 10)
+	while (x < 58)
 	{
 		putchar(x);
 		x++;
