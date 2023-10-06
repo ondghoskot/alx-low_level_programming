@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-  int ch = 'a';
+	int ch = 'a';
 
-  while (ch <= 'z')
-  {
-      putchar(ch);
-      if (ch == 'd' || ch == 'p')
-      {
-	  ch += 2;
-      }
-      else
-      {
-	  ch++;
-      }
-  }
-  putchar('\n');
-  return (0);
+       	while (ch <= 'z')
+	{
+		putchar(ch);
+		if (ch == 'd' || ch == 'p')
+		{
+			ch += 2;
+		}
+		else
+		{
+			ch++;
+		}
+	}
+	putchar('\n');
+	return (0);
 }
