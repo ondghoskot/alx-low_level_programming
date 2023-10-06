@@ -12,12 +12,12 @@ int main(void)
 	while (sdn <= 57)
 	{
 		putchar(sdn);
-		sdn++;
 		if (sdn < 57)
 		{
 		putchar(44);
 		putchar(32);
 		}
+		sdn++;
 	}
 	putchar('\n');
 	return (0);
