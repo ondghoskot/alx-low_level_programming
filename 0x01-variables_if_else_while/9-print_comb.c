@@ -11,11 +11,11 @@ int main(void)
 
 	while (sdn < 58)
 	{
-		putchart(sdn);
-		putchart(44);
-		putchart(32);
+		putchar(sdn);
+		putchar(44);
+		putchar(32);
 		sdn++;
 	}
-	putchart('\n');
+	putchar('\n');
 	return (0);
 }
