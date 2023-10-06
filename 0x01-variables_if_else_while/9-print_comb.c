@@ -9,12 +9,19 @@ int main(void)
 {
 	int sdn = 48;
 
-	while (sdn < 58)
+	while (sdn <= 57)
 	{
 		putchar(sdn);
+		sdn++;
+		if (sdn < 57)
+		{
 		putchar(44);
 		putchar(32);
-		sdn++;
+		}
+		else
+		{
+			break;
+		}
 	}
 	putchar('\n');
 	return (0);
