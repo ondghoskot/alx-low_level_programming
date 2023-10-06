@@ -20,7 +20,7 @@ int main(void)
 		}
 		else
 		{
-			break;
+			sdn++;
 		}
 	}
 	putchar('\n');
