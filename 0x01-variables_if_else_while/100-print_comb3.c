@@ -28,7 +28,7 @@ int main(void)
 		while (d1 == d2 || d1 > d2)
 		{
 			d2++;
-        	}
+		}
 	}
 	putchar('\n');
 	return (0);
