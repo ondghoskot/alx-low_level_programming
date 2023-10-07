@@ -34,16 +34,16 @@ int main(void)
 				}
 				d3++;
 				d4 = 48;
-				while (d1 == d3 && d2 == d4)
-				{
-					d4++;
-				}
 			}
 			d2++;
 			d3 = 48;
 		}
 		d1++;
 		d2 = 48;
+		while (d1 == d3 && d2 == d4)
+		{
+			d4++;
+		}
 	}
 	putchar('\n');
 	return (0);
