@@ -25,11 +25,10 @@ int main(void)
 		}
 		d1++;
 		d2 = 50;
-		if (d1 == d2 || d1 > d2)
+		while (d1 == d2 || d1 > d2)
 		{
 			d2++;
-		}
-	}
+        	}
 	putchar('\n');
 	return (0);
 }
