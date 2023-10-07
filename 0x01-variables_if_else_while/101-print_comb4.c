@@ -33,8 +33,8 @@ int main(void)
 			{
 				d3++;
 			}
+			d1++;
 		}
-		d1++;
 	}
 	putchar('\n');
 	return (0);
