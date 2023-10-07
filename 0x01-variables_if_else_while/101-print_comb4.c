@@ -29,7 +29,7 @@ int main(void)
 			}
 			d2++;
 			d3 = 51;
-			while ((d1 == d2 && d2  == d3) || (d1 > d2 && d2  > d3))
+			while ((d1 == d2 || d2  == d3) || (d1 > d2 || d2  > d3))
 			{
 				d3++;
 			}
