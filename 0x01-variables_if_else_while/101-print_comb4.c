@@ -35,6 +35,8 @@ int main(void)
 			}
 		}
 		d1++;
+		d2 = d1 + 1;
+		d3 = d2 + 1;
 	}
 	putchar('\n');
 	return (0);
