@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("FOR THE NIGHT IS DARK AND FULL OF TERRORS");
+	printf("Holberton School");
 	return (0);
 }
