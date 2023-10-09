@@ -2,9 +2,8 @@
 	.intel_syntax noprefix
 	.text
 	.section	.rodata
-	.align 8
 .LC0:
-	.string	"FOR THE NIGHT IS DARK AND FULL OF TERRORS"
+	.string	"Holberton School"
 	.text
 	.globl	main
 	.type	main, @function
