@@ -3,6 +3,8 @@
 /**
  * _abs - prints the absolute value of argument
  *
+ *@a: argument, signed integer
+ *
  * Return: absolute value (positive)
  */
 int _abs(int a)
