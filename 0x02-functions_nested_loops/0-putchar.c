@@ -8,11 +8,18 @@
  */
 int _putchar(char c)
 {
-	return write(1, &c, sizeof(c) + 1);
+	return write(1, &c, 1);
 }
 int main(void)
 {
-	const char *str = "_putchar\n";
-	_putchar(str);
+	const char *str = "_putchar";
+	int i;
+
+	while (str[i] != '\0') 
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar('\n');
 	return (0);
 }
