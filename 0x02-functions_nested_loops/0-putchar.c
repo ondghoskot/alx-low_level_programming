@@ -9,8 +9,7 @@
 /* function that prints a single character using the write() operation */
 int _putchar(char c)
 {
-	write(1, &c, 1);
-	return (1);
+	return write(1, &c, 1);
 }
 
 int main(void)
