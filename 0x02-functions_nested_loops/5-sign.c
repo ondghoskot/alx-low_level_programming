@@ -1,5 +1,5 @@
 #include "main.h"
-#include <unistd>
+#include <unistd.h>
 
 /**
  * print_sign - prints sign of input argument
