@@ -1,7 +1,7 @@
 #include <unistd.h>
 #include "main.h"
 
-void print_alphapet(void)
+void print_alphabet(void)
 {
 	char l = 'a';
 
