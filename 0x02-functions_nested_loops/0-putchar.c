@@ -1,4 +1,5 @@
 #include <unistd.h>
+#include "main.h"
 
 /**
  * main - Entry point
@@ -7,8 +8,15 @@
  */
 int main(void)
 {
-	const char *str = "_putchar\n";
-
-	write(1, str, sizeof(str) + 1);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 	return (0);
 }
