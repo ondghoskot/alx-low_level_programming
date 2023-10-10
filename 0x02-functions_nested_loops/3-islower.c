@@ -2,6 +2,10 @@
 
 /**
  * _islower - returns truthy value (1) if character is lowercase.
+ *
+ * @c: argument of function and ASCII value.
+ *
+ * Return: 1 if c is lowercase and 0 otherwise.
  */
 int _islower(int c)
 {
