@@ -17,7 +17,7 @@ void times_table(void)
 
 			if (column == 0)
 			{
-				_putchar('0');
+				_putchar('0' + result);
 			}
 			else
 			{
@@ -25,9 +25,16 @@ void times_table(void)
 				if (result < 10)
 				{
 					_putchar(' ');
+					_putchar(' ');
+					_putchar('0' + result);
+				}
+				else
+				{
+					_putchar(' ');
+					_putchar('0' + (result / 10));
+					_putchar('0' + (result % 10));
 				}
 			}
-			_putchar('0' + result);
 			column++;
 		}
 		_putchar('\n');
