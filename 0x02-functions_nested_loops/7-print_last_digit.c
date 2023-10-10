@@ -13,7 +13,14 @@ int print_last_digit(int n)
 
 	if (n < 0)
 	{
-		ld = -n % 10;
+		if (n == -2147483648)
+		{
+			ld = 8;
+		}
+		else
+		{
+			ld = -n % 10;
+		}
 	}
 	else
 	{
