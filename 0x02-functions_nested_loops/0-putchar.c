@@ -6,14 +6,13 @@
  *
  * Return: Always 0 (Success)
  */
-int _putchar(char c);
+int _putchar(char c)
 {
-	const char *str = "_putchar\n";
-
-	return write(1, str, sizeof(str) + 1);
+	return write(1, &c, sizeof(c) + 1);
 }
 int main(void)
 {
+	const char *str = "_putchar\n";
 	_putchar(str);
 	return (0);
 }
