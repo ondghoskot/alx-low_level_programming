@@ -25,16 +25,15 @@ void print_times_table(int n)
 				}
 				else
 				{
+					_putchar(',');
 					if (result < 10)
 					{
-						_pucthar(',');
 						_putchar(' ');
 						_putchar(' ');
 						_putchar('0' + result);
 					}
 					else
 					{
-						_putchar(',');
 						_putchar(' ');
 						_putchar('0' + result / 10);
 						_putchar('0' + result % 10);
