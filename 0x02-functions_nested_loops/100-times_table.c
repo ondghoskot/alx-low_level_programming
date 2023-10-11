@@ -21,23 +21,27 @@ void print_times_table(int n)
 
 				if (column == 0)
 				{
-					_putchar(0 + result);
+					_putchar('0' + result);
 				}
 				else
 				{
 					_putchar(',');
+					_putchar(' ');
 					if (result < 10)
 					{
 						_putchar(' ');
-						_putchar(' ');
 						_putchar('0' + result);
 					}
-					else
+					else if (result < 100)
 					{
-						_putchar(' ');
 						_putchar('0' + result / 10);
 						_putchar('0' + result % 10);
 					}
+					else
+					{
+						_putchar('0' + result / 100);
+						_putchar('0' + result / 10);
+						_putchar('0' + result % 10);
 				}
 				column++;
 			}
