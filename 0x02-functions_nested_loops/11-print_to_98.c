@@ -7,6 +7,7 @@
  */
 void print_to_98(int n)
 {
+	int is_negative = (n > 98) ? 1 : 0;
 	while (n != 98)
 	{
 		if (is_negative) {
