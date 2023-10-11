@@ -40,10 +40,10 @@ void print_times_table(int n)
 					_putchar('0' + ((result / 10) % 10));
 					_putchar('0' + result % 10);
 				}
+				column++;
 			}
-			column++;
+			_putchar('\n');
+			row++;
 		}
-		_putchar('\n');
-		row++;
 	}
 }
