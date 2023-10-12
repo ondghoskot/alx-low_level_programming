@@ -11,19 +11,13 @@ void more_numbers(void)
 
 	while (i <= 9)
 	{
-		int j = 0;
+		int j = 10;
 
+		print_numbers();
 		while (j <= 14)
 		{
-			if (j < 10)
-			{
-				_putchar('0' + j);
-			}
-			else
-			{
-				_putchar('0' + (j / 10));
-				_putchar('0' + (j % 10));
-			}
+			_putchar('0' + (j / 10));
+			_putchar('0' + (j % 10));
 			j++;
 		}
 		_putchar('\n');
