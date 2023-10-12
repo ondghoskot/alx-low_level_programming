@@ -18,8 +18,16 @@ void print_diagonal(int n)
 		while (i < n)
 		{
 			_putchar('\\');
+			_putchar('\n');
+
+			int j = 0;
+
+			while (j < i)
+			{
+				_putchar(' ');
+				j++;
+			}
 			i++;
 		}
-		_putchar('\n');
 	}
 }
