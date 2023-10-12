@@ -31,7 +31,7 @@ int main(void)
 			printf("%d ", n);
 		}
 		n++;
-		if (i < 100)
+		if (n < 100)
 		{
 			printf(" ");
 		}
