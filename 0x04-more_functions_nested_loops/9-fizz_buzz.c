@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /**
- * fizz_buzz - prints numbers from 1 to 100 with some twists:
+ * main  - prints numbers from 1 to 100 with some twists:
  * if a number is a multiple of 3 it prints Fizz
  * if a number is a multiple of 5 it prints Buzz
  * if it's both a multiple of 3 and 5 it prints FizzBuzz
- * Return: void
+ * Return: Always 0
  */
-void fizz_buzz(void)
+int main(void)
 {
 	int n = 1;
 
@@ -33,4 +33,5 @@ void fizz_buzz(void)
 		n++;
 	}
 	printf("\n");
+	return (0);
 }
