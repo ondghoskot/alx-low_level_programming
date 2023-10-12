@@ -1,0 +1,35 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * fizz_buzz - prints numbers from 1 to 100 with some twists:
+ * if a number is a multiple of 3 it prints Fizz
+ * if a number is a multiple of 5 it prints Buzz
+ * if it's both a multiple of 3 and 5 it prints FizzBuzz
+ * Return: void
+ */
+void fizz_buzz(void)
+{
+	int n = 1;
+
+	while (n <= 100)
+	{
+		if (n % 3 == 0 && n % 5 == 0)
+		{
+			printf("Fizz Bizz ");
+		}
+		else if (n % 3 == 0)
+		{
+			printf("Fizz ");
+		}
+		else if (n % 5 == 0)
+		{
+			printf("Buzz ");
+		}
+		else
+		{
+			printf("%d ", n);
+		}
+		n++;
+	}
+}
