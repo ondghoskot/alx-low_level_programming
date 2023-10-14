@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * main - prints largest prime factor of 612852475143
@@ -8,14 +7,14 @@
  */
 int main(void)
 {
-	long long  n = 612852475143;
-	long long lpf = -1;
-	long long  d = 2;
+	long  n = 612852475143;
+	long lpf = -1;
+	long  d = 2;
 
 	while (n > 1)
 	{
 		int is_prime = 1;
-		long long i = 2;
+		long i = 2;
 
 		if (d == 2)
 		{
@@ -40,6 +39,6 @@ int main(void)
 		}
 		d++;
 	}
-	printf("%lld\n", lpf);
+	printf("%ld\n", lpf);
 	return (0);
 }
