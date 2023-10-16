@@ -5,7 +5,7 @@
  * @str: given string
  * Return: nothing
  */
-void puts2(chr *str)
+void puts2(char *str)
 {
 	int i = 0;
 
