@@ -10,11 +10,10 @@
 int main(int argc, char *argv[])
 {
 	int i, j, s = 0;
-	
+
 	if (argc == 1)
 	{
 		putchar('0');
-		return (0);
 	}
 	for (i = 1; i < argc; i++)
 	{
