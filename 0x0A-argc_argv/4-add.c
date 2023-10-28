@@ -11,29 +11,18 @@ int main(int argc, char *argv[])
 {
 	int i, j, s = 0;
 
-	if (argc == 1)
+	for (i = 1; i < argc; i++)
 	{
-		putchar('0');
-		return (0);
-	}
-	else
-	{
-		while (i < argc)
+		for (j = 0; argv[i][j]; j++)
 		{
-			j = 0;
-			while (argv[i][j] != '\0')
+			if (argv[i][j] <= '0' || argv[i][j] >= '9')
 			{
-				if (argv[i][j] <= 'a' || argv[i][j] >= 'z')
-				{
-					printf("Error\n");
-					return (1);
-				}
-				j++;
+				printf("Error\n");
+				return (1);
 			}
-			i++;
-			s += atoi(argv[i]);
 		}
-		printf("%d\n", s);
-		return (0);
+		s += atoi(argv[i]);
 	}
+	printf("%d\n", s);
+	return (0);
 }
