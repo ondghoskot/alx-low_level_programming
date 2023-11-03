@@ -20,6 +20,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	for (unsigned int i = 0; i < total_size; i++)
 		char_ptr[i] = 0;
-	return (p);
+	return ((void *)p);
 
 }
