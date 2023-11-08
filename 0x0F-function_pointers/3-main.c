@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-	if ((*argb[2] == '/' || *argv[2] == '%'))
+	if ((*argv[2] == '/' || *argv[2] == '%'))
 	{
 		printf("Error");
 		exit(100);
