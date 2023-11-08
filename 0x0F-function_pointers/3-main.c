@@ -15,20 +15,20 @@ int main(int argc, char *argv[])
 	if (argc != 4)
 	{
 		printf("Error");
-		exit(98);
+		return (98);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	if ((*argv[2] == '/' || *argv[2] == '%'))
 	{
 		printf("Error");
-		exit(100);
+		return (100);
 	}
 	ptop = get_op_func(argv[2]);
 	if (ptop == NULL)
 	{
 		printf("Error");
-		exit(98);
+		return (98);
 	}
 	printf("%d\n", ptop(num1, num2));
 	return (0);
