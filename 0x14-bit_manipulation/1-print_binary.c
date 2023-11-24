@@ -18,7 +18,7 @@ void print_binary(unsigned long int n)
 			leading = 0;
 		if (!leading)
 			_putchar(((n & bit) ? 1 : 0) + '0');
-		bit = bit >> 1
+		bit = bit >> 1;
 	}
 	if (leading)
 		_putchar('0');
