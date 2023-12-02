@@ -41,7 +41,7 @@ void cp(ssize_t src_fd, ssize_t subject_fd, char *subf)
 		{
 			_close(src_fd);
 			_close(subject_fd);
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", subject_fd);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", subf);
 		}
 		count = read(src_fd, buffer, 1024);
 	}
@@ -63,7 +63,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		return (97);
 	}
-	src_fd = open(argv[1], 0_RDONLY);
+	src_fd = open(argv[1], O_RDONLY);
 	if (src_fd == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		return (99);
 	}
-	copy_file(src_fd, subject_fd, argv[2]);
+	cp(src_fd, subject_fd, argv[2]);
 	_close(src_fd);
 	_close(subject_fd);
 	return (0);
