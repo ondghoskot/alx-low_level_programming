@@ -2,6 +2,20 @@
 #include <stdio.h>
 
 /**
+ * _strlen - calculates length of string
+ * @str: string to calculate legtth of
+ * Return: length of string
+ */
+size_t _strlen(char *str)
+{
+	int len = 0;
+
+	while (str[len] != '\0')
+		len++;
+	return (len);
+}
+
+/**
  * _close - function to close a file
  * @fd: closed file
  * Return: nothing
