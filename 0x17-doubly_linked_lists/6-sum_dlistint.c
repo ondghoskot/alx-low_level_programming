@@ -3,7 +3,7 @@
 /**
  * sum_dlistint - adds up the data in each node in dll
  * @head: ptr to first node in dll
- * Retutn: sum od data
+ * Return: sum of data
  */
 int sum_dlistint(dlistint_t *head)
 {
