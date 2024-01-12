@@ -18,7 +18,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if (head != NULL && *head != NULL)
 	{
 		before_last_node = *head;
-		while(before_last_node->next != NULL)
+		while (before_last_node->next != NULL)
 			before_last_node = before_last_node->next;
 		before_last_node->next = new_node;
 		new_node->prev = before_last_node;
