@@ -1,4 +1,4 @@
-#usr/bin/python3
+#!/usr/bin/python3
 """ Program of the island perimeter calculator"""
 
 def island_perimeter(grid):
@@ -21,3 +21,4 @@ def island_perimeter(grid):
                         break
     perimeter = (horizontal + vertical) * 2
     return perimeter
+
